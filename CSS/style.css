@@ -1,0 +1,283 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+    margin:0px;
+    background-color:#1D1D1D;
+}
+
+#navabar{
+    background-color:white;
+    color: #EDEDED;
+    display: inline-block;
+    width: 100%;
+    height: 5vh;
+}
+
+#navbarList{
+    background-color: #1D1D1D;
+    color: black;
+    display: flex;
+    flex-direction:row-reverse;
+    height: 10vh;
+    margin: 0px;
+}
+
+#navbarList li{
+    list-style: none;
+    padding: 1rem;
+    font-size: 1.65rem;
+    color: #EDEDED;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* margin: auto; */
+}
+
+#navbar li a:hover{
+  /* transition: ease-out 0.2s; */
+  text-decoration: underline;
+  text-decoration-thickness: 0.4rem;
+  text-underline-offset: 0.6rem;
+  text-decoration-color: #07efcc;
+}
+
+#navbarList li a{
+    color: inherit;
+    text-decoration: none;
+    /* scroll-behavior: smooth; */
+}
+
+.sticky{
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    width: 100%;
+}
+
+#home{
+    /* margin-left: 50%; */
+    font-size: 8rem;
+    margin-left: 10%;
+    font-weight: bolder;
+    color: #EDEDED;
+    margin-top: 15%;
+    font-family: Bogart, Recoleta, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    height: 100vh;
+    /* border-bottom: thin solid white; */
+}
+
+#about{
+    height: 100vh;
+    background-color: #303030;
+    color: #EDEDED;
+}
+
+#about-title-container{
+  margin-left: 24%;
+  position: relative;
+  top: 10%;
+  padding: 2rem;
+}
+
+#about-content-container{
+  max-width: 50%;
+  min-width: 50%;
+  margin-left: 10%;
+  margin-top: 5%;
+  font-size: 1.9rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* border: white solid thin; */
+  padding: 0.8rem;
+  /* box-shadow: 2px 2px 2px #EDEDED; */
+}
+
+#projects{
+  height: 100vh;
+  background-color: #303030;
+}
+
+#projects-title-container{
+  margin-left: 24%;
+  position: relative;
+  top: 10%;
+  padding: 2rem;
+  color: #EDEDED;
+}
+
+#skills{
+  height: 100vh;
+  background-color: #303030;
+}
+
+#skills-title-container{
+  margin-left: 24%;
+  position: relative;
+  top: 10%;
+  padding: 2rem;
+  color: black;
+}
+
+#certifications{
+  height: 100vh;
+  background-color: #303030;
+}
+
+#c-title-container{
+  margin-left: 24%;
+  position: relative;
+  top: 10%;
+  padding: 2rem;
+  color: #EDEDED;
+}
+
+#contact{
+  height: 100vh;
+  background-color: #303030;
+}
+
+#co-title-container{
+  margin-left: 24%;
+  position: relative;
+  top: 10%;
+  padding: 2rem;
+  color: #EDEDED;
+}
+
+.title{
+    /* margin-left: 10%; */
+    font-size: 6rem;
+    font-family: Bogart, Recoleta, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bolder;
+}
+
+@keyframes rubberBand {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+  
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+  
+    65% {
+      transform: scale3d(.95, 1.05, 1);
+    }
+  
+    75% {
+      transform: scale3d(1.05, .95, 1);
+    }
+  
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes rubberBand2{
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, .95, 1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.animate{
+    animation-duration: 1.3s;
+    animation-fill-mode:none;
+    animation-iteration-count: 1;
+    display: inline-block;
+    animation-name: rubberBand;
+}
+
+ .Animate:hover{
+    animation-duration: 1s;
+    animation-fill-mode:none;
+    animation-iteration-count: 1;
+    animation-name: rubberBand2;
+    color: #07efcc;
+    /* color: #0785ed; */
+} 
+
+.card-container{
+  display: flex;
+}
+
+.card{
+  width: 18rem;
+  margin: auto;
+  margin-top: 5rem;
+  padding: 1rem;
+  box-shadow: 0 4px 8px 0 #EDEDED;
+  transition: 0.3s;
+  background-color: #EDEDED;
+  min-height: 200px;
+  height: 20rem;
+}
+
+.card-body p{
+  font-family: Bogart, Recoleta, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0%;
+  padding: 0.2rem;
+}
+
+.card-body{
+  justify-content: center;
+  text-align: center;
+}
+
+.card-button{
+  background-color: #0b7cf5;
+  /* font-family: Bogart, Recoleta, "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  padding: 0.3rem;
+  margin-top: 0.3rem;
+}
+
+.card-button a{
+  font-family: Bogart, Recoleta, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: larger;
+  padding: 0.2rem;
+  color:#EDEDED;
+  text-decoration: none;
+}
+
+.card:hover{
+  box-shadow: 0 8px 16px 0 #EDEDED;
+}
+
+.card-button:hover{
+  background-color: #0069D9;
+}
+
+.clickable-card{
+  color: #1D1D1D;
+  text-decoration: none;
+}
